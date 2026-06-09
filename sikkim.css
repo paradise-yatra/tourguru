@@ -1,0 +1,27 @@
+.hero{
+    background-image: url("images/him.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+
+.sikpackages{
+   background-color: #f2fbf7;
+}
+
+.container-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container-hover:hover {
+  transform: translateY(-5px); /* lift effect */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  background-color: #f8f9fa;
+}

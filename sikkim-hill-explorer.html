@@ -1,0 +1,826 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sikkim Hill Explorer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- PAGE-SPECIFIC STYLES -->
+
+</head>
+
+<body>
+
+    <!-- HEADER (loaded via JS) -->
+    <div id="header"></div>
+
+    <!-- -- HERO -- -->
+    <section class="sikkim-hill-explorer">
+        <div class="hero-box text-black bg-white w-100 rounded-5 p-4">
+            <h1 class="fw-bold">Sikkim Hill Explorer</h1>
+            <span class="fw-bold text-primary d-block mb-3">Starting From 10,500 / person</span>
+            <div class="d-flex align-items-center justify-content-around py-2 flex-wrap gap-2">
+                <p class="mb-0"><i class="bi bi-check-circle-fill text-success me-1"></i> Best pricing</p>
+                <p class="mb-0"><i class="bi bi-check-circle-fill text-success me-1"></i> Cab included</p>
+                <p class="mb-0"><i class="bi bi-check-circle-fill text-success me-1"></i> Handpicked hotels</p>
+                <p class="mb-0"><i class="bi bi-check-circle-fill text-success  me-1"></i> Local expert support</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- -- STATS STRIP -- -->
+    <div class="stats-strip">
+        <div class="container">
+            <div class="row g-0">
+                <div class="col-6 col-md-3 stat-col">
+                    <span class="s-num">2000+</span>
+                    <span class="s-label">Happy Travellers</span>
+                </div>
+                <div class="col-6 col-md-3 stat-col">
+                    <span class="s-num">4.9</span>
+                    <span class="s-label">Average Rating</span>
+                </div>
+                <div class="col-6 col-md-3 stat-col">
+                    <span class="s-num">6D/5N</span>
+                    <span class="s-label">Duration</span>
+                </div>
+                <!-- CHANGED: was "4 Dhams / All Covered" -->
+                <div class="col-6 col-md-3 stat-col">
+                    <span class="s-num">3 Zones</span>
+                    <span class="s-label">Gangtok - Darjeeling - Nathu La</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -- TRUST BADGES -- -->
+    <div class="trust-bar">
+        <div class="container">
+            <div class="row g-3 justify-content-center text-center text-md-start">
+                <div class="col-6 col-md-auto">
+                    <div class="trust-item justify-content-center justify-content-md-start">
+                        <i class="bi bi-shield-check-fill"></i> 100% Safe &amp; Verified
+                    </div>
+                </div>
+                <div class="col-6 col-md-auto">
+                    <div class="trust-item justify-content-center justify-content-md-start">
+                        <i class="bi bi-cash-coin"></i> Lowest Price Guarantee
+                    </div>
+                </div>
+                <div class="col-6 col-md-auto">
+                    <div class="trust-item justify-content-center justify-content-md-start">
+                        <i class="bi bi-headset"></i> 24/7 On-Trip Support
+                    </div>
+                </div>
+                <div class="col-6 col-md-auto">
+                    <div class="trust-item justify-content-center justify-content-md-start">
+                        <i class="bi bi-arrow-counterclockwise"></i> Easy Cancellation
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -- HIGHLIGHTS -- -->
+    <section class="container py-5">
+        <span class="section-eyebrow">What You'll Experience</span>
+        <h2 class="fw-bold fs-1 mb-4">Experience Highlights</h2>
+        <div class="highlight-wrapper py-3">
+            <div class="highlight-item"><i class="bi bi-check-circle-fill text-success"></i><span>Directorate of
+                    Handicraft and Handloom</span></div>
+            <div class="highlight-item"><i class="bi bi-check-circle-fill text-success"></i><span>Gangtok</span></div>
+            <div class="highlight-item"><i class="bi bi-check-circle-fill text-success"></i><span>MG Marg</span></div>
+            <div class="highlight-item"><i class="bi bi-check-circle-fill text-success"></i><span>Tsomgo Lake</span>
+            </div>
+            <div class="highlight-item"><i class="bi bi-check-circle-fill text-success"></i><span>Baba Harbhajan Singh
+                    Mandir</span></div>
+            <div class="highlight-item"><i class="bi bi-check-circle-fill text-success"></i><span>Tiger Hill</span>
+            </div>
+            <div class="highlight-item"><i class="bi bi-check-circle-fill text-success"></i><span>Darjeeling</span>
+            </div>
+            <div class="highlight-item"><i class="bi bi-check-circle-fill text-success"></i><span>Himalayan
+                    Mountaineering Institute</span></div>
+            <div class="highlight-item"><i class="bi bi-check-circle-fill text-success"></i><span>Mall Road Darjeeling
+                </span></div>
+        </div>
+    </section>
+
+    <!-- -- ITINERARY -- -->
+    <div class="container bg-light py-4 py-md-5 rounded-4 my-5">
+        <span class="section-eyebrow">Day-by-Day Plan</span>
+        <h2 class="fs-1 fw-bold mb-4">Detailed Itinerary</h2>
+
+        <div class="accordion" id="itineraryAccordion">
+
+            <!-- DAY 1 -->
+            <div class="card border rounded-4 mb-3 shadow-sm">
+                <button class="btn btn-light d-flex align-items-center gap-3 p-3 rounded-4 w-100 text-start"
+                    type="button" data-bs-toggle="collapse" data-bs-target="#day1">
+                    <span class="badge bg-primary px-3 py-2">DAY 1</span>
+                    <span class="fw-semibold flex-grow-1">New Jalpaiguri Railway Station (NJP) / Bagdogra Airport (IXB)
+                        to Gangtok
+                        <small class="text-muted d-block">(130 km / 4 hrs drive)</small></span>
+                    <i class="bi bi-chevron-down"></i>
+                </button>
+                <div id="day1" class="collapse show" data-bs-parent="#itineraryAccordion">
+                    <div class="card-body border-top">Your Gangtok and Darjeeling adventure begins the moment you step
+                        off the train or plane at NJP Railway Station or Bagdogra Airport. Our representative will be
+                        right there waiting to greet you with a warm and friendly welcome before taking charge of
+                        everything from that point on. Sit back and enjoy the scenic four hour drive to Gangtok as the
+                        road climbs steadily through lush green forests and winding mountain roads, offering little
+                        glimpses of the beautiful world that awaits you over the coming days.
+
+                        On arrival check into your hotel, freshen up, and allow yourself some time to rest and settle in
+                        after the journey. The remainder of the day is completely yours to enjoy at your own pace.
+
+                        As the evening comes in make your way to MG Marg, the lively and beloved main street of Gangtok.
+                        This cheerful and vibrant stretch is the perfect place to get your first real feel for the city.
+                        Stroll at a leisurely pace, browse through the local shops, pick up a few souvenirs, grab a warm
+                        cup of tea, and soak in the energy and warmth of Gangtok as it comes alive in the evening light.
+
+                        Return to your hotel when you are ready and settle in for a peaceful and comfortable overnight
+                        stay.</div>
+                </div>
+            </div>
+
+            <!-- DAY 2 -->
+            <div class="card border rounded-4 mb-3 shadow-sm">
+                <button class="btn btn-light d-flex align-items-center gap-3 p-3 rounded-4 w-100 text-start"
+                    type="button" data-bs-toggle="collapse" data-bs-target="#day2">
+                    <span class="badge bg-dark px-3 py-2">DAY 2</span>
+                    <span class="fw-semibold flex-grow-1">Gangtok Full Day Sightseeing
+                    </span>
+                    <i class="bi bi-chevron-down"></i>
+                </button>
+                <div id="day2" class="collapse" data-bs-parent="#itineraryAccordion">
+                    <div class="card-body border-top">After a satisfying breakfast, get ready to spend the day exploring
+                        Gangtok, the capital city of Sikkim sitting at an elevation of 1650 metres and serving as the
+                        main gateway into the state. Your first stop is Bakthang Waterfall, a wide and impressive
+                        cascade that is easily one of the most photogenic spots in the city. From there head to Tashi
+                        Viewpoint where the far reaching views of Kangchenjunga, the third highest mountain in the
+                        world, are absolutely stunning and on clear mornings the sunrise over the peaks is something
+                        truly special. Next visit Ganesh Tok, a charming hilltop Hindu temple that offers mesmerizing
+                        views of the surrounding landscape and a peaceful atmosphere that is hard to leave behind.
+                        Enchey Monastery comes next, a sacred site believed to be watched over by the protective deities
+                        Khangchendzonga and Yabdean, carrying a calm and spiritual energy throughout. Round off the
+                        morning with a cable car ride on the Ropeway for a breathtaking bird's eye view of the city and
+                        the hills stretching out below. The remaining attractions covered during the day include the
+                        Directorate of Handicraft and Handloom, Do Drul Chorten Stupa, Institute of Tibetology, Flower
+                        Show, and the beautiful Banjhakri Falls. After a wonderful day of sightseeing drive back to the
+                        hotel for a comfortable overnight stay.</div>
+                </div>
+            </div>
+
+            <!-- DAY 3 -->
+            <div class="card border rounded-4 mb-3 shadow-sm">
+                <button class="btn btn-light d-flex align-items-center gap-3 p-3 rounded-4 w-100 text-start"
+                    type="button" data-bs-toggle="collapse" data-bs-target="#day3">
+                    <span class="badge bg-dark px-3 py-2">DAY 3</span>
+                    <span class="fw-semibold flex-grow-1">Gangtok (Excursion to Tsomgo Lake and Baba Mandir)
+                        <small class="text-muted d-block"></small></span>
+                    <i class="bi bi-chevron-down"></i>
+                </button>
+                <div id="day3" class="collapse" data-bs-parent="#itineraryAccordion">
+                    <div class="card-body border-top">Today is going to be a day you will not forget in a hurry. Head
+                        out early at around 8 am toward Tsomgo Lake, a stunning high altitude lake sitting at 3750
+                        metres and about a three hour drive from Gangtok. The lake is genuinely beautiful with snow
+                        covered peaks and wild flowers surrounding it on all sides, and it holds deep religious
+                        importance for both Hindus and Buddhists. In winter the whole lake freezes over while in spring
+                        colourful flowers bloom around its shores and bring it back to life. After spending time at the
+                        lake drive over to Baba Harbhajan Mandir, a heartfelt shrine dedicated to the brave Indian
+                        soldier Baba Harbhajan Singh who laid down his life while serving his nation with complete
+                        dedication. After the excursion head back to the hotel in Gangtok and spend the rest of the day
+                        however you please. Overnight stay at the hotel.
+
+                        Note: Nathula Pass can also be visited on the same day at an additional cost. It is one of the
+                        highest motorable passes in the world and a historic trading route that once connected Tibet and
+                        India, making it a fascinating stop for history and adventure lovers alike.</div>
+                </div>
+            </div>
+
+            <!-- DAY 4 -->
+            <div class="card border rounded-4 mb-3 shadow-sm">
+                <button class="btn btn-light d-flex align-items-center gap-3 p-3 rounded-4 w-100 text-start"
+                    type="button" data-bs-toggle="collapse" data-bs-target="#day4">
+                    <span class="badge bg-dark px-3 py-2">DAY 4</span>
+                    <span class="fw-semibold flex-grow-1">Gangtok to Darjeeling
+                        <small class="text-muted d-block">(110 km / 4 hrs drive)</small></span>
+                    <i class="bi bi-chevron-down"></i>
+                </button>
+                <div id="day4" class="collapse" data-bs-parent="#itineraryAccordion">
+                    <div class="card-body border-top">After a good breakfast, pack your bags and get ready to head
+                        toward Darjeeling, one of the most beloved hill stations in the entire country. Once you arrive
+                        our representative will be right there to welcome you and help you settle into your hotel
+                        without any hassle. Spend the night comfortably at the hotel and let the cool mountain air of
+                        the Queen of Hills ease you into a peaceful rest.</div>
+                </div>
+            </div>
+
+            <!-- DAY 5 -->
+            <div class="card border rounded-4 mb-3 shadow-sm">
+                <button class="btn btn-light d-flex align-items-center gap-3 p-3 rounded-4 w-100 text-start"
+                    type="button" data-bs-toggle="collapse" data-bs-target="#day5">
+                    <span class="badge bg-dark px-3 py-2">DAY 5</span>
+                    <span class="fw-semibold flex-grow-1">Darjeeling Full Day Sightseeing<small
+                            class="text-muted d-block"></small></span>
+                    <i class="bi bi-chevron-down"></i>
+                </button>
+                <div id="day5" class="collapse" data-bs-parent="#itineraryAccordion">
+                    <div class="card-body border-top">Today is going to be one of those days that stays with you for a
+                        very long time. Set your alarm for around 4 in the morning because the day begins with a drive
+                        up to Tiger Hill, the highest point in Darjeeling at 2042 metres. The reason for the early start
+                        becomes clear the moment you arrive and watch the sunrise slowly paint the snow covered peaks of
+                        Kangchenjunga in shades of gold and amber. It is one of the most breathtaking natural spectacles
+                        you will ever witness and well worth every minute of lost sleep. On the way back stop at Batasia
+                        Loop, a scenic spiral railway track set in a wonderfully picturesque location, and then visit
+                        Ghoom Monastery, one of the oldest and most revered monasteries in the region. Grab a warm and
+                        satisfying breakfast before continuing to the Japanese Temple, a beautifully crafted Buddhist
+                        pilgrimage site known for its elegant and traditional Japanese architecture that creates a
+                        wonderfully calm and meditative atmosphere. The rest of the day takes you through more of
+                        Darjeeling's finest attractions including Padmaja Naidu Himalayan Zoological Park, which is
+                        closed on Thursdays, the legendary Himalayan Mountaineering Institute, Tenzing Rock, the serene
+                        Peace Pagoda, and an outer view of the beautiful Chitrey Tea Garden. Round off the evening with
+                        a relaxed and enjoyable stroll along MG Road, the lively main street of Darjeeling where the
+                        town truly comes alive after dark.</div>
+                </div>
+            </div>
+
+            <!-- DAY 6 -->
+            <div class="card border rounded-4 mb-3 shadow-sm">
+                <button class="btn btn-light d-flex align-items-center gap-3 p-3 rounded-4 w-100 text-start"
+                    type="button" data-bs-toggle="collapse" data-bs-target="#day6">
+                    <span class="badge bg-dark px-3 py-2">DAY 6</span>
+                    <span class="fw-semibold flex-grow-1">
+                        Darjeeling to New Jalpaiguri Railway Station (NJP) / Bagdogra Airport (IXB)
+                        <small class="text-muted d-block">(88 km / 3 hrs drive)</small></span>
+                    <i class="bi bi-chevron-down"></i>
+                </button>
+                <div id="day6" class="collapse" data-bs-parent="#itineraryAccordion">
+                    <div class="card-body border-top">The last day of this wonderful journey has arrived. After a
+                        relaxed breakfast check out of the hotel and get ready to head toward NJP Railway Station or
+                        Bagdogra Airport for the three hour drive back through the hills. As the mountains slowly fade
+                        behind you take a moment to think back on everything this trip brought your way. The golden
+                        sunrise over Kangchenjunga, the sacred lakes, the ancient monasteries, the laughter, the warmth,
+                        and all the little moments in between that made this journey truly special. It has been a
+                        pleasure travelling with you and we hope to see you again very soon on your next great
+                        adventure.</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- -- INCLUSIONS & EXCLUSIONS -- -->
+    <div class="container my-5">
+        <span class="section-eyebrow">Package Details</span>
+        <h2 class="fw-bold fs-1 text-dark mb-4">Inclusions &amp; Exclusions</h2>
+        <div class="row g-4">
+
+            <div class="col-md-6">
+                <div class="card h-100 border-0 shadow-sm rounded-4">
+                    <div
+                        class="card-header bg-success-subtle text-success fw-semibold fs-6 border-0 rounded-top-4 px-4 py-3 d-flex align-items-center gap-2">
+                        <span
+                            class="bg-success text-white rounded-circle d-flex align-items-center justify-content-center"
+                            style="width:30px;height:30px;"><i class="bi bi-check fs-2"></i></span>
+                        What's Included
+                    </div>
+                    <ul class="list-group list-group-flush rounded-bottom-4">
+                        <li class="list-group-item fw-normal border-bottom px-4 py-3 d-flex align-items-start gap-3"><span
+                                class="badge bg-success-subtle text-success rounded-circle p-1"><i
+                                    class="bi bi-check fs-4"></i></span>Accommodation in 3 / 4 hotels (double sharing)
+                        </li>
+                        <li class="list-group-item fw-normal border-bottom px-4 py-3 d-flex align-items-start gap-3"><span
+                                class="badge bg-success-subtle text-success rounded-circle p-1"><i
+                                    class="bi bi-check fs-4"></i></span>Breakfast &amp; Dinner daily</li>
+                        <li class="list-group-item fw-normal border-bottom px-4 py-3 d-flex align-items-start gap-3"><span
+                                class="badge bg-success-subtle text-success rounded-circle p-1"><i
+                                    class="bi bi-check fs-4"></i></span>All sightseeing &amp; transfers by private AC
+                            car</li>
+                        <li class="list-group-item fw-normal border-bottom px-4 py-3 d-flex align-items-start gap-3"><span
+                                class="badge bg-success-subtle text-success rounded-circle p-1"><i
+                                    class="bi bi-check fs-4"></i></span>Arrival &amp; departure transfers from NJP / Bagdogra
+                        </li>
+                        <li class="list-group-item fw-normal border-bottom px-4 py-3 d-flex align-items-start gap-3"><span
+                                class="badge bg-success-subtle text-success rounded-circle p-1"><i
+                                    class="bi bi-check fs-4"></i></span>Welcome drinks on arrival</li>
+                        <li class="list-group-item fw-normal px-4 py-3 d-flex align-items-start gap-3"><span
+                                class="badge bg-success-subtle text-success rounded-circle p-1"><i
+                                    class="bi bi-check fs-4"></i></span>Toll taxes, parking, fuel &amp; driver allowance
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card h-100 border-0 shadow-sm rounded-4">
+                    <div
+                        class="card-header bg-danger-subtle text-danger fw-semibold fs-6 border-0 rounded-top-4 px-4 py-3 d-flex align-items-center gap-2">
+                        <span
+                            class="bg-danger text-white rounded-circle d-flex align-items-center justify-content-center"
+                            style="width:30px;height:30px;"><i class="bi bi-x fs-2"></i></span>
+                        What's Excluded
+                    </div>
+                    <ul class="list-group list-group-flush rounded-bottom-4">
+                        <li class="list-group-item fw-normal border-bottom px-4 py-3 d-flex align-items-start gap-3"><span
+                                class="badge bg-danger-subtle text-danger rounded-circle p-1"><i
+                                    class="bi bi-x fs-4"></i></span>Lunch &amp; personal meals</li>
+                        <li class="list-group-item border-bottom fw-normal px-4 py-3 d-flex align-items-start gap-3"><span
+                                class="badge bg-danger-subtle text-danger rounded-circle p-1"><i
+                                    class="bi bi-x fs-4"></i></span>Heater &amp; seasonal facility charges</li>
+                        <li class="list-group-item border-bottom fw-normal px-4 py-3 d-flex align-items-start gap-3"><span
+                                class="badge bg-danger-subtle text-danger rounded-circle p-1"><i
+                                    class="bi bi-x fs-4"></i></span>Nathula Pass charges (if opted)</li>
+                        <li class="list-group-item border-bottom fw-normal px-4 py-3 d-flex align-items-start gap-3"><span
+                                class="badge bg-danger-subtle text-danger rounded-circle p-1"><i
+                                    class="bi bi-x fs-4"></i></span>Personal expenses (laundry, shopping, etc.)</li>
+                        <li class="list-group-item fw-normal px-4 py-3 d-flex align-items-start gap-3"><span
+                                class="badge bg-danger-subtle text-danger rounded-circle p-1"><i
+                                    class="bi bi-x fs-4"></i></span>5% GST</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- -- WHAT TO CARRY -- -->
+    <section class="container my-5">
+        <span class="section-eyebrow">Packing Guide</span>
+        <h2 class="fw-bold fs-1 mb-2">What to Carry</h2>
+        <p class="text-muted mb-4">Hill stations require smart packing - here's what you must bring.</p>
+        <div class="row g-3">
+            <div class="col-md-4 col-sm-6">
+                <div class="carry-card">
+                    <div class="carry-icon"></div>
+                    <div>
+                        <h6>Warm Clothing</h6>
+                        <p>Thermals, woollen layers, windproof jacket - temperatures drop sharply after sunset even in summer at Gangtok and Darjeeling.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="carry-card">
+                    <div class="carry-icon"></div>
+                    <div>
+                        <h6>Valid ID Proof</h6>
+                        <p>Aadhaar, Voter ID or Passport is mandatory for all travellers. Inner Line Permit for Tsomgo Lake also requires a copy.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="carry-card">
+                    <div class="carry-icon"></div>
+                    <div>
+                        <h6>Comfortable Shoes</h6>
+                        <p>Grip-sole shoes are essential for walking around Gangtok hills and the Darjeeling sightseeing trail.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="carry-card">
+                    <div class="carry-icon"></div>
+                    <div>
+                        <h6>Basic Medicines</h6>
+                        <p>Altitude sickness pills, pain relievers, band-aids and any personal prescription medicines for high-altitude days.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="carry-card">
+                    <div class="carry-icon"></div>
+                    <div>
+                        <h6>Day Backpack</h6>
+                        <p>A light 20-25L backpack for daily excursions with water bottle, snacks and camera essentials.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="carry-card">
+                    <div class="carry-icon"></div>
+                    <div>
+                        <h6>Rainwear / Poncho</h6>
+                        <p>Sudden rains are common in Sikkim and Darjeeling - a lightweight poncho or rain jacket is a must.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- -- REVIEWS -- -->
+    <section class="container my-5">
+        <span class="section-eyebrow">Traveller Stories</span>
+        <h2 class="fw-bold fs-1 mb-2">What Travellers Say</h2>
+        <p class="text-muted mb-4">Genuine experiences from travellers who explored Sikkim and Darjeeling with us.</p>
+        <div class="row g-4">
+
+            <!-- CHANGED: Sikkim-relevant review 1 -->
+            <div class="col-md-4">
+                <div class="review-card">
+                    <div class="review-quote-mark">"</div>
+                    <div class="review-stars"></div>
+                    <p class="review-text">The Tsomgo Lake was absolutely magical - frozen peaks, crystal water, and our driver knew every great photo spot. Best trip I have ever taken with my family.</p>
+                    <div class="review-author">
+                        <div class="review-avatar">P</div>
+                        <div>
+                            <div class="review-name">Priya Agarwal</div>
+                            <div class="review-loc">Kanpur - March 2025</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CHANGED: Sikkim-relevant review 2 -->
+            <div class="col-md-4">
+                <div class="review-card">
+                    <div class="review-quote-mark">"</div>
+                    <div class="review-stars"></div>
+                    <p class="review-text">Tiger Hill sunrise over Kangchenjunga is something I will never forget. Every hotel was clean and warm. The package was worth every single rupee.</p>
+                    <div class="review-author">
+                        <div class="review-avatar">M</div>
+                        <div>
+                            <div class="review-name">Manoj Tiwari</div>
+                            <div class="review-loc">Allahabad - April 2025</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CHANGED: Sikkim-relevant review 3 -->
+            <div class="col-md-4">
+                <div class="review-card">
+                    <div class="review-quote-mark">"</div>
+                    <div class="review-stars"></div>
+                    <p class="review-text">Darjeeling's MG Road at night and the Himalayan Mountaineering Institute during the day - a perfect balance. The 24/7 support team was excellent throughout.</p>
+                    <div class="review-author">
+                        <div class="review-avatar">N</div>
+                        <div>
+                            <div class="review-name">Neha Saxena</div>
+                            <div class="review-loc">Meerut - May 2025</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- -- TRAVEL TIPS -- -->
+    <section class="container my-5">
+        <div class="row g-5 align-items-start">
+            <div class="col-lg-6">
+                <span class="section-eyebrow">Pro Tips</span>
+                <h2 class="fw-bold fs-1 mb-4">Travel Tips</h2>
+
+                <!-- CHANGED: Sikkim-relevant tips -->
+                <div class="tip-item">
+                    <div class="tip-num">1</div>
+                    <p><strong>Start early each day.</strong> Tiger Hill sunrise is around 4 AM. Plan all sightseeing by 7 AM to avoid afternoon fog which rolls in heavily post-noon.</p>
+                </div>
+                <div class="tip-item">
+                    <div class="tip-num">2</div>
+                    <p><strong>Carry warm layers even in summer.</strong> Sikkim temperatures drop sharply after sunset. A light fleece jacket is essential even during May and June.</p>
+                </div>
+                <div class="tip-item">
+                    <div class="tip-num">3</div>
+                    <p><strong>Keep Inner Line Permit ready.</strong> Tsomgo Lake and Nathula Pass require permits - we arrange them, but carry two passport-size photos with you.</p>
+                </div>
+                <div class="tip-item">
+                    <div class="tip-num">4</div>
+                    <p><strong>Carry cash.</strong> ATMs are limited beyond Gangtok. Withdraw sufficient cash before your Tsomgo Lake excursion day.</p>
+                </div>
+                <div class="tip-item">
+                    <div class="tip-num">5</div>
+                    <p><strong>Respect monastery rules.</strong> Remove footwear, speak softly, and photography is not allowed inside the prayer halls of Enchey and Ghoom monasteries.</p>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <span class="section-eyebrow">Best Time</span>
+                <h2 class="fw-bold fs-1 mb-4">When to Visit</h2>
+                <div class="row g-3">
+                    <div class="col-6">
+                        <div class="card border-0 shadow-sm rounded-4 p-3 h-100">
+                            <div class="fs-2 mb-2"></div>
+                            <h6 class="fw-bold">March - June</h6>
+                            <p class="text-muted mb-0" style="font-size:.83rem;">Peak season - pleasant weather, clear mountain views, rhododendrons in full bloom.</p>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card border-0 shadow-sm rounded-4 p-3 h-100">
+                            <div class="fs-2 mb-2"></div>
+                            <h6 class="fw-bold">Oct - Nov</h6>
+                            <p class="text-muted mb-0" style="font-size:.83rem;">Post-monsoon - crystal clear skies, best views of Kangchenjunga, less crowded roads.</p>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card border-0 shadow-sm rounded-4 p-3 h-100">
+                            <div class="fs-2 mb-2"></div>
+                            <h6 class="fw-bold">July - Sept</h6>
+                            <p class="text-muted mb-0" style="font-size:.83rem;">Avoid - heavy monsoon, frequent landslides and road closures are common in Sikkim.</p>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card border-0 shadow-sm rounded-4 p-3 h-100">
+                            <div class="fs-2 mb-2"></div>
+                            <h6 class="fw-bold">Dec - Feb</h6>
+                            <p class="text-muted mb-0" style="font-size:.83rem;">Winter - Tsomgo Lake freezes beautifully but roads can be icy and very cold.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- -- FAQ DRIBBBLE STYLE -- -->
+    <div class="faq-outer" id="faq">
+        <div class="container">
+            <div class="faq-inner-grid">
+
+                <div>
+                    <h2 class="faq-big-heading">FAQs</h2>
+                    <p class="faq-left-text">Everything you need to know before embarking on your Sikkim Hill Explorer journey - answered clearly.</p>
+                    <a href="https://wa.me/918979269388" class="faq-wa-link">
+                        <i class="bi bi-whatsapp"></i> Chat with us on WhatsApp
+                    </a>
+                </div>
+
+                <!-- CHANGED: All 6 FAQs updated for Sikkim -->
+                <ul class="faq-list-custom">
+
+                    <li>
+                        <button class="faq-custom-btn open" onclick="toggleFaq(this)">
+                            <span class="faq-q-text">What is the best time to visit Gangtok and Darjeeling</span>
+                            <span class="faq-icon-circle">+</span>
+                        </button>
+                        <div class="faq-ans show">March to June and October to November are the ideal months. Skies are clear, weather is very pleasant and all sightseeing spots including Tsomgo Lake are fully accessible. Avoid July to September due to heavy monsoon and landslide risk.</div>
+                    </li>
+
+                    <li>
+                        <button class="faq-custom-btn" onclick="toggleFaq(this)">
+                            <span class="faq-q-text">Is Nathula Pass included in the package</span>
+                            <span class="faq-icon-circle">+</span>
+                        </button>
+                        <div class="faq-ans">Nathula Pass is not included in the base price - it can be added on the Tsomgo Lake day at an additional cost. Please note that Nathula Pass is open only to Indian nationals and requires a special permit which we arrange for you.</div>
+                    </li>
+
+                    <li>
+                        <button class="faq-custom-btn" onclick="toggleFaq(this)">
+                            <span class="faq-q-text">What permits are required for this tour</span>
+                            <span class="faq-icon-circle">+</span>
+                        </button>
+                        <div class="faq-ans">An Inner Line Permit is required for Tsomgo Lake and Nathula Pass. We handle the entire permit process - you just need to carry a valid government-issued photo ID (Aadhaar, Voter ID or Passport) and two passport-size photographs.</div>
+                    </li>
+
+                    <li>
+                        <button class="faq-custom-btn" onclick="toggleFaq(this)">
+                            <span class="faq-q-text">Where does the tour start and end</span>
+                            <span class="faq-icon-circle">+</span>
+                        </button>
+                        <div class="faq-ans">The tour starts and ends at NJP Railway Station or Bagdogra Airport. We provide pickup and drop from both. Pickup from Kolkata can also be arranged on request at an additional cost.</div>
+                    </li>
+
+                    <li>
+                        <button class="faq-custom-btn" onclick="toggleFaq(this)">
+                            <span class="faq-q-text">Is the package customisable</span>
+                            <span class="faq-icon-circle">+</span>
+                        </button>
+                        <div class="faq-ans">Absolutely! We offer Sikkim-only and Darjeeling-only options as well. North Sikkim, Pelling, and Kalimpong extensions can also be added. WhatsApp us for a fully customised quote based on your group size and preferences.</div>
+                    </li>
+
+                    <li>
+                        <button class="faq-custom-btn" onclick="toggleFaq(this)">
+                            <span class="faq-q-text">What is the cancellation and refund policy</span>
+                            <span class="faq-icon-circle">+</span>
+                        </button>
+                        <div class="faq-ans">60+ days: full refund minus processing fee. 30-59 days: 75% refund. 15-29 days: 50% refund. Less than 15 days: no refund. In case of road closures or natural calamities, full credit is issued for rescheduling.</div>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- -- BOOKING INFORMATION -- -->
+    <section class="container my-5">
+        <div class="row g-4">
+
+            <div class="col-lg-7">
+                <span class="section-eyebrow">Plan Your Journey</span>
+                <h2 class="fw-bold fs-1 mb-4">Booking Information</h2>
+
+                <div class="accordion" id="bookingAccordion">
+
+                    <div class="accordion-item border rounded-4 mb-3 overflow-hidden shadow-sm">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button fw-semibold" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#bookingOne">
+                                <i class="bi bi-credit-card me-2 text-primary"></i> Booking and Payment
+                            </button>
+                        </h2>
+                        <div id="bookingOne" class="accordion-collapse collapse show"
+                            data-bs-parent="#bookingAccordion">
+                            <div class="accordion-body text-secondary">
+                                Only 25% advance required to confirm your booking. Remaining balance can be paid before
+                                journey start via UPI, bank transfer or card.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item border rounded-4 mb-3 overflow-hidden shadow-sm">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed fw-semibold" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#bookingTwo">
+                                <i class="bi bi-x-circle me-2 text-danger"></i> Cancellation Policy
+                            </button>
+                        </h2>
+                        <div id="bookingTwo" class="accordion-collapse collapse" data-bs-parent="#bookingAccordion">
+                            <div class="accordion-body">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item d-flex gap-3"><i
+                                            class="bi bi-check-circle-fill text-success"></i> 60+ days: Full refund
+                                        minus processing fee</li>
+                                    <li class="list-group-item d-flex gap-3"><i
+                                            class="bi bi-check-circle-fill text-success"></i> 30-59 days: 75% refund
+                                    </li>
+                                    <li class="list-group-item d-flex gap-3"><i
+                                            class="bi bi-check-circle-fill text-warning"></i> 15-29 days: 50% refund
+                                    </li>
+                                    <li class="list-group-item d-flex gap-3"><i
+                                            class="bi bi-x-circle-fill text-danger"></i> Less than 15 days: No refund
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item border rounded-4 overflow-hidden shadow-sm">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed fw-semibold" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#bookingThree">
+                                <i class="bi bi-file-earmark-text me-2 text-success"></i> Travel Documents
+                            </button>
+                        </h2>
+                        <div id="bookingThree" class="accordion-collapse collapse" data-bs-parent="#bookingAccordion">
+                            <div class="accordion-body text-secondary">
+                                Carry valid government ID proof, booking confirmation, Inner Line Permit printout (arranged by us), and two passport-size photographs for permit processing at checkpoints.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-lg-5">
+                <div class="card border-0 shadow rounded-4 p-4">
+                    <small class="text-muted">Package Starting From</small>
+                    <h2 class="fw-bold text-primary mb-0">10,500</h2>
+                    <small class="text-muted">per person - 6 Days / 5 Nights</small>
+                    <hr>
+                    <ul class="list-unstyled mb-3">
+                        <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Hotel + Breakfast +
+                            Dinner</li>
+                        <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Private AC Cab +
+                            Transfers</li>
+                        <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Only 25% advance to
+                            confirm</li>
+                    </ul>
+                    <a href="https://wa.me/918979269388" class="btn btn-success w-100 rounded-pill fw-bold py-2">
+                        <i class="bi bi-whatsapp me-2"></i> Book on WhatsApp
+                    </a>
+                    <div class="d-flex align-items-center gap-2 mt-3">
+                        <i class="bi bi-headset text-primary fs-4"></i>
+                        <div>
+                            <h6 class="mb-0 fw-bold">24/7 Expert Support</h6>
+                            <small class="text-muted">Live assistance during your trip.</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- -- SIMILAR PACKAGES -- -->
+    <section class="container my-5">
+        <span class="section-eyebrow">Explore More</span>
+        <h2 class="fw-bold fs-1 mb-2">Similar Packages</h2>
+        <p class="text-muted mb-4">More hill journeys curated for you.</p>
+        <div class="row g-4">
+
+            <div class="col-md-4">
+                <div class="pkg-card">
+                    <div class="pkg-thumb"></div>
+                    <div class="pkg-body">
+                        <span class="pkg-badge">North Sikkim</span>
+                        <h5>North Sikkim Explorer</h5>
+                        <div class="pkg-meta"><i class="bi bi-clock me-1"></i>5 Days / 4 Nights &nbsp;-&nbsp; <i
+                                class="bi bi-geo-alt me-1"></i>Lachen + Lachung + Gurudongmar</div>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <div class="pkg-price">22,000 <small>/ person</small></div>
+                            <a href="#" class="btn btn-sm btn-outline-warning rounded-pill fw-bold">View</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="pkg-card">
+                    <div class="pkg-thumb" style="background: linear-gradient(135deg,#134e4a,#0f766e);"></div>
+                    <div class="pkg-body">
+                        <span class="pkg-badge">West Sikkim</span>
+                        <h5>Pelling & Ravangla Tour</h5>
+                        <div class="pkg-meta"><i class="bi bi-clock me-1"></i>4 Days / 3 Nights &nbsp;-&nbsp; <i
+                                class="bi bi-geo-alt me-1"></i>Pelling + Ravangla + Namchi</div>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <div class="pkg-price">18,500 <small>/ person</small></div>
+                            <a href="#" class="btn btn-sm btn-outline-warning rounded-pill fw-bold">View</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="pkg-card">
+                    <div class="pkg-thumb" style="background: linear-gradient(135deg,#1e3a5f,#2563eb);"></div>
+                    <div class="pkg-body">
+                        <span class="pkg-badge">Heritage</span>
+                        <h5>Darjeeling Only Package</h5>
+                        <div class="pkg-meta"><i class="bi bi-clock me-1"></i>3 Days / 2 Nights &nbsp;-&nbsp; <i
+                                class="bi bi-geo-alt me-1"></i>Darjeeling - West Bengal</div>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <div class="pkg-price">12,000 <small>/ person</small></div>
+                            <a href="#" class="btn btn-sm btn-outline-warning rounded-pill fw-bold">View</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <div id="footer"></div>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/918979269388"
+        class="btn btn-success position-fixed end-0 m-4 rounded-pill shadow px-4 py-2 fw-bold"
+        style="z-index:999; bottom: 80px;">
+        <i class="bi bi-whatsapp me-1"></i> Book Now
+    </a>
+
+    <!-- -- STICKY BOTTOM BAR -- -->
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Badge color change on accordion toggle
+        document.querySelectorAll('.collapse').forEach(function (el) {
+            const badge = el.closest('.card') && el.closest('.card').querySelector('.badge');
+            if (!badge) return;
+            el.addEventListener('show.bs.collapse', () => badge.classList.replace('bg-dark', 'bg-primary'));
+            el.addEventListener('hide.bs.collapse', () => badge.classList.replace('bg-primary', 'bg-dark'));
+        });
+
+        // Dribbble-style FAQ toggle
+        function toggleFaq(btn) {
+            const answer = btn.nextElementSibling;
+            const isOpen = btn.classList.contains('open');
+            document.querySelectorAll('.faq-custom-btn').forEach(b => {
+                b.classList.remove('open');
+                b.nextElementSibling.classList.remove('show');
+            });
+            if (!isOpen) {
+                btn.classList.add('open');
+                answer.classList.add('show');
+            }
+        }
+
+        // Sticky bar - hide when booking section is visible
+        const stickyBar = document.getElementById('stickyBar');
+        const bookingSection = document.querySelector('.sticky-bar + * , section.container.my-5:last-of-type');
+        window.addEventListener('scroll', () => {
+            const scrollBottom = window.scrollY + window.innerHeight;
+            const docHeight = document.body.scrollHeight;
+            if (scrollBottom > docHeight - 300) {
+                stickyBar.classList.add('hide');
+            } else {
+                stickyBar.classList.remove('hide');
+            }
+        });
+    </script>
+
+</body>
+
+</html>
+
+
