@@ -1,3 +1,12 @@
+// DYNAMIC FAVICON INJECTION
+(function() {
+    const link = document.querySelector("link[rel*='icon']") || document.createElement('link');
+    link.type = 'image/png';
+    link.rel = 'shortcut icon';
+    link.href = 'logo/favicon.png';
+    document.getElementsByTagName('head')[0].appendChild(link);
+})();
+
 function loadComponent(id, file) {
 
     fetch(file)

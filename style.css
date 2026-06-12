@@ -7,6 +7,7 @@
    BASE / GLOBAL START
 ========================================= */
 
+
 html,
 body {
     font-family: 'Poppins', sans-serif;
@@ -18,6 +19,39 @@ body {
     font-size: 18px;
 }
 
+
+.navbar {
+    padding: 12px 0;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 40px;
+    background: transparent;
+    width: 160px;
+    height: 48px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.navbar-brand:hover {
+    background: transparent;
+    transform: translateY(-1px);
+}
+
+.logo {
+    width: 160px !important;
+    height: 160px !important;
+    object-fit: contain;
+    display: block;
+    transition: 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
 
 /* =========================================
    BASE / GLOBAL END
@@ -75,12 +109,14 @@ body {
 /* ── LOGO ── */
 
 .navbar-brand img {
-    width: 90px;
+    width: 160px !important;
+    height: 160px !important;
+    object-fit: contain;
     transition: 0.3s ease;
 }
 
 .navbar-brand img:hover {
-    transform: scale(1.03);
+    transform: scale(1.05);
 }
 
 .navbar-toggler{
